@@ -3,6 +3,13 @@ Banco do Brasil Scraper
 
 Scraper para baixar seus extratos do Banco do Brasil com um comando.
 
+Como instalar
+-------------
+
+```console
+$ pip install bbscraper
+```
+
 Motivação
 ---------
 
