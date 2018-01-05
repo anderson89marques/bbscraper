@@ -59,7 +59,7 @@ Development
 
 ```console
  git clone https://github.com/anderson89marques/bbscraper
- cd itauscraper
+ cd bbscraper
  python -m venv -p python3.6 .venv
  source .venv/bin/activate
  pip install -r requirements.txt
