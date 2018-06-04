@@ -61,6 +61,17 @@ Para conhecer todas as opções:
 $ bbscraper -h
 ```
 
+Usando docker
+----------
+
+```console
+$ docker build -t anderson89marques/bbscraper .
+```
+
+```console
+$ docker container run -it anderson89marques/bbscraper:latest  bbscraper --extrato --saldo --agencia 12345 --conta 123456
+```
+
 Development
 -----------
 
