@@ -61,7 +61,7 @@ Para conhecer todas as opções:
 $ bbscraper -h
 ```
 
-Usando docker
+Com Docker
 ----------
 
 ```console
@@ -71,6 +71,21 @@ $ docker build -t anderson89marques/bbscraper .
 ```console
 $ docker container run -it anderson89marques/bbscraper:latest  bbscraper --extrato --saldo --agencia 12345 --conta 123456
 ```
+
+Usando ```make``` para simplificar os comandos do Docker:
+
+
+Para fazer *build*:
+
+```console
+$ make build
+```
+
+Para executar comandos:
+```console
+$ make run --extrato --saldo --agencia 12345 --conta 123456
+```
+
 
 Development
 -----------
