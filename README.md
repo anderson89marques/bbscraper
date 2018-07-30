@@ -65,25 +65,11 @@ Com Docker
 ----------
 
 ```console
-$ docker build -t anderson89marques/bbscraper .
+$ docker build -t anderson89marques/bbscraper --no-cache .
 ```
 
 ```console
 $ docker container run -it anderson89marques/bbscraper:latest  bbscraper --extrato --saldo --agencia 12345 --conta 123456
-```
-
-Usando ```make``` para simplificar os comandos do Docker:
-
-
-Para fazer *build*:
-
-```console
-$ make build
-```
-
-Para executar comandos:
-```console
-$ make run --extrato --saldo --agencia 12345 --conta 123456
 ```
 
 
@@ -93,10 +79,21 @@ Development
 ```console
  git clone https://github.com/anderson89marques/bbscraper
  cd bbscraper
+
+Sem docker
+----------
+```
  python -m venv -p python3.6 .venv
  source .venv/bin/activate
  pip install -r requirements.txt
 ```
+
+Com docker
+-------
+```console
+$ docker build -t anderson89marques/bbscraper --no-cache .
+$ docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp anderson89marques/bbscraper python -m bbscraper --extrato --agencia 12345 --conta 123456
+
 
 Licença
 -------
