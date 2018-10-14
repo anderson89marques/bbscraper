@@ -15,7 +15,7 @@ class MobileSession(requests.Session):
 
         self.mount(API_ENDPOINT, HTTPAdapter(max_retries=32, pool_connections=50, pool_maxsize=50))
         self.headers.update({
-            'User-Agent': 'Android;Google Nexus 5 - 6.0.0 - API 23 - 1080x1920;Android;6.0;vbox86p-userdebug 6.0 MRA58K eng.buildbot.20160110.195928 test-keys;mov-android-app;6.14.0.1;en_US;cpu=0|clock=|ram=2052484 kB|espacoSDInterno=12.46 GB|isSmartphone=true|nfc=false|camera=true|cameraFrontal=true|root=true|reconhecimentoVoz=false|resolucao=1080_1776|densidade=3.0|',
+            'User-Agent' :  'Apple; iPad2,1; iPhone OS; 9.3.5; 13G36; mov-iphone-app; 3.42.0.1; pt_BR; 00; 00; WIFI; isSmartphone=false;',
             'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8'
         })
 
